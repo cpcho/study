@@ -16,9 +16,10 @@ for (var i = 0; i < orders.length; i++) {
 //reduce function
 // var totalAmount = orders.reduce(function(sum, order) {
 //     return sum + order.amount
-// }, 0); //second argument = initial point
+// }, 0); //second argument = initial point for sum
 
-var totalAmount = orders.reduce((sum, order) => sum + order.amount, 0)
+//reduce with fat arrow function
+var totalAmount = orders.reduce((sum, order) => sum + order.amount, 0);
 
 console.log(totalAmount);
 
