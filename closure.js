@@ -9,8 +9,35 @@ function greetMe() {
 me = 'Batman'
 greetMe();
 */
+//greetMe() has an access to outer scope.
+
+//Why closures are useful:
+
+function sendRequest() {
+	var requestID='123';
+	$.ajax({
+		url: '/myUrl',
+		success: function(res) {
+			alert('Request ' + reqeustID + ' returned')
+		}
+	});
+}
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
+/***********************/
+function makeAdder(x) { // function factory
+	return function(y) {
+		return x + y;
+	};
+}
+
+var add5 = makeAdder(5);
+var add10 = makeAdder(10);
+
+console.log(add5(2)); // 7
+console.log(add10(2)); // 12
+/***********************/
 
 var counter = function() {
 	var privateCounter = 0;
