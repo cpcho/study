@@ -19,7 +19,7 @@ CommonJS
     
     //store/customer.js
     function customerStore () {
-        return customers.get('store);
+        return customers.get('store');
     }
     
     modules.exports = customerStore;

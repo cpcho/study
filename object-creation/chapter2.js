@@ -36,7 +36,7 @@ let boromir = {
     sound: 'One does not simply walk into mordor'
 }
 boromir.speak(); // using 'this' from boromir reference
-talk(); // using this from global object window
+talk(); // using 'this' from global object window
 
 let blabber = boromir.speak;
 blabber(); // undefined, still referencing to the same function

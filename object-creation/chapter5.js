@@ -3,10 +3,6 @@
 //__proto__: property of an object that points out to the protytpe that has been set out for that object
 //prototype: property on a function that has set as a property if you are using the "new" keyword
 
-
-//`__proto__` is an object's prototype and `prototype` is 
-//an object to use as a prototype it all makes much more sense and you begin to 
-
 // delegation - Object delegating to other object
 
 let cat = {

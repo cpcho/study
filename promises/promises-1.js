@@ -63,7 +63,7 @@ getJSON('story.json').then(function(story) {
   console.log("Got chapter 1!", chapter1);
 })
 /***********************************************/
-var story Promises;
+var storyPromise;
 
 function getChapter(i) {
   storyPromise = storyPromise || getJSON('story.json');
