@@ -8,21 +8,21 @@ https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/Using#I
 
 /***
 CommonJS
-    *keywords: require and exports
-    *NodeJS implements CommonJS specificationf or its module loader
+    *keywords: require and modules.exports
+    *NodeJS implements CommonJS specification for its module loader
     *Synchronous and circular dependencies are supported
     *Browserify uses CommonJS in browser
 ***/
 
-//payments.js
-var customerStore = require('store/customer'); // import module
-
-//store/customer.js
-function customerStore () {
-    return customers.get('store);
-}
-
-modules.exports = customerStore;
+    //payments.js
+    var customerStore = require('store/customer'); // import module
+    
+    //store/customer.js
+    function customerStore () {
+        return customers.get('store);
+    }
+    
+    modules.exports = customerStore;
 
 
 /***

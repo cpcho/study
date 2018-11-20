@@ -3,6 +3,19 @@ Closure
 *****/
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 
+const add = (function () {
+    let counter = 0;
+    function increment() {
+      counter += 1; 
+      return counter;
+    }
+    return increment;
+})();
+
+console.log(add()); // 1
+console.log(add()); // 2
+console.log(add()); // 3
+
 /*
 var me = 'Bruce'
 function greetMe() {
@@ -16,6 +29,14 @@ greetMe();
 */
 
 //Why closures are useful:
+
+const add = function () {
+  let count = 0;
+  function increment() {
+    count += 1;
+    return count;
+  }
+}
 
 function sendRequest() {
 	var requestID='123';

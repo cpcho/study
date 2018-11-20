@@ -19,6 +19,6 @@ var animals = [
 
 //using map with arrow function
 //omit return statement and curly braces
-var names = animals.map((x) => x.name)
+var names = animals.map((x) => x.name) 
 
-console.log(names);
+console.log(names); ////[ 'Fluffykins', 'Caro', 'Binge', 'Hamilton', 'Jimmy' ]

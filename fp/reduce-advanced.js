@@ -40,6 +40,13 @@ let data = [
   }
 ]
 
+//Solution
+console.log(data
+  .filter(d => d.country != 'China')
+  .map(d => d.pop)
+  .reduce((acc, d) => acc + d ));
+  
+//Or
 
 let sum = data.reduce((total, amount) => {
     return amount.country === 'China' ? total : total + amount.pop;
